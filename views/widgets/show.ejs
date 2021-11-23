@@ -1,0 +1,17 @@
+<h1>"Wacky Widgets"</h1>
+
+<div>
+    <% widgets.forEach(function(wacky) { %>
+        <div>
+            Description: <%= wacky.description %> 
+        </div>
+        <div>
+            Quantity: <%= wacky.quantity %> 
+        </div> 
+
+        <form action="/?_method=DELETE" method="POST">
+            <input type="submit" value="Delete">
+        </form>
+    <% }) %>
+<a href="/new">New Widget</a>
+</div>
